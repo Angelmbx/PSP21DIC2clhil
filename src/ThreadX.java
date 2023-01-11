@@ -36,6 +36,20 @@ public class ThreadX extends java.lang.Thread {
         h2.start();
         h2.join();
 
+        /*
+        Deberia ser asi.
+
+        h1.start
+        h2.start
+        try{
+        h1.join()
+        h2.join()
+        } catch Exception e {
+        sout get stacktrace}
+
+        sout "FIN"
+         */
+
     }
 
 }
